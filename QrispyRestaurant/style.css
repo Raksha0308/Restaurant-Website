@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: "spline sans", sans-serif;
+    color: #777;
+    background-color:#fafafaed ;
+    line-height: 1.7;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #222;
+}
+
+.navbar-nav .nav-item .nav-link{
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+    
+}
+
+.navbar-nav .nav-item .nav-link.active{
+    color: #f58d17;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: #f58d17;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #f58d17;
+}
+
+img{
+    width: 100%;
+    height: 400px;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover{
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover{
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* btn */
+
+.btn{
+    border-radius: 0;
+    padding: 12px 28px;
+}
+
+.btn-brand{
+    color: #fff;
+    font-weight: 500;
+    background-color:#f58d17 ;
+    border-color: #f58d17;
+}
+
+.btn-brand:hover{
+    background-color:#d37310 ;
+    border-color: #d37310;
+    color: #fff;
+}
+
+/* Hero section */
+
+.slide-1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/slide1.jpg);
+}
+
+.slide-2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/slide2.jpg);
+}
+
+.bg-cover{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before{
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+/* About */
+
+ .divider{
+    width: 60px;
+    height: 3px;
+    display: block;
+    background-color: #f58d17;
+}
+
+/* Menu */
+
+.intro-text{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+#menu .nav-pills .nav-link{
+    background-color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: black;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #f58d17;
+    color: white;
+}
+
+.menu-item img{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-item .stars{
+    color: #f58d17;
+}
+
+/* Feature */
+
+#features{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.feature-img{
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/feature.jpg); */
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/serv-1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.feature{
+    border: 2px solid rgba(255, 255, 255, 0.2);    
+}
+
+.feature .feature-icon{
+    width: 70px;
+    height: 60px;
+    background-color: #f58d17;
+    color: #fff;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+/* Team */
+.team-member img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0 #f58d17;
+    
+}
+
+/* Review */
+
+#review{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/restro1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.review img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.review .quote-icon{
+    font-size: 74px;
+    color: #f58d17;
+    line-height: 1;
+}
+
+.review .stars{
+    color: #f58d17;
+}
+
+#review .carousel-indicators{
+    margin-bottom: -3rem;
+}
+
+/* Reservation */
+
+#reservation .form-control{
+    border-radius: 0;
+}
+
+#reservation .form-control:focus{
+    box-shadow: none;
+    border-color: #f58d17;
+}
+
+#reservation input.form-control{
+    height: 47px;
+}
+
+/* Gallary */
+
+.gallary-img img{
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Blog Post */
+
+.blog-post img{
+    width: 40%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer */
+
+footer{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/restro1.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-top{
+    margin-bottom: 30px;
+}
+
+footer a,
+footer p{
+    color: rgba(255, 255, 255, 0.824);
+}
+
+footer .social-links a{
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer img{
+    max-width: 175px;
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    border-top: 1px solid rgba(225, 225, 225, 0.4);
+}

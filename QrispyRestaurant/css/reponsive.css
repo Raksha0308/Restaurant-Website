@@ -1,0 +1,46 @@
+
+@media (max-width:576px) {
+    .gy-4 {
+        --bs-gutter-y: 1.5rem;
+    }
+    
+    #menu .nav-pills .nav-link{
+        margin-left: 1px;
+        margin-right: 1px;
+        font-size: 14px;
+    }
+
+
+    .row-block{
+        flex-direction: column;
+        /* margin-left: 50px;
+        margin-right: 50px; */
+    }
+    .menu-block img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .team-member img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* blog */
+
+@media (max-width:768px) {
+    .blog-post{
+        flex-direction: column;
+        /* margin-left: 50px;
+        margin-right: 50px; */
+    }
+    .blog-post img{
+        width: 100%;
+        height: 250px;
+    }
+}
