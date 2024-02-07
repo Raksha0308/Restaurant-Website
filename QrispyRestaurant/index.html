@@ -758,26 +758,32 @@
 
                 </div>
             </div>
-            <form action="#" class="row justify-content-center form-validation">
+            <form action="index.html" class="row justify-content-center form-validation">
                 <div class="col-lg-8">
                     <div class="row g-3">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" placeholder="Full Name" id="field-1" required>
+                            <input type="text" class="form-control" placeholder="Full Name" id="contact-name" onkeyup="validateName()">
+                            <span id="name-error"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" placeholder="Email address" id="field-2" required>
+                            <input type="email" class="form-control" placeholder="Email address" id="contact-email" onkeyup="validateEmail()">
+                            <span id="email-error"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" placeholder="Date" id="field-3">
+                            <input type="text" class="form-control" placeholder="Enter Mob. No." id="contact-phone"onkeyup="validatePhone()" maxlength="10">
+                            <span id="contact-error"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" placeholder="Time" id="field-4">
+                            <input type="text" class="form-control" placeholder="City" id="contact-city" onkeyup="validateCity()">
+                            <span id="city-error"></span>
                         </div>
                         <div class="form-group col-md-12">
-                            <textarea name="" id="" cols="30" rows="4" class="form-control" id="field-5" placeholder="Message" required></textarea>
+                            <textarea name="" cols="30" rows="4" class="form-control" id="contact-msg" placeholder="Message" onkeyup="validateMsg()" maxlength="200"></textarea>
+                            <span id="msg-error"></span>
                         </div>
                         <div class="form-group col-md-12 text-center">
-                            <button href="#" type="submit" class="btn btn-brand">Send Message</button>
+                            <button href="" type="submit" class="btn btn-brand" onclick="return validateForm()">Send Message</button>
+                            <span id="submit-error"></span>
                         </div>
                     </div>
                 </div>
